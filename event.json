@@ -1,13 +1,3 @@
-Headers: 
-
-{
-  "x-github-event": "push",
-  "x-github-delivery": "bf11e0be-d1db-11ea-839b-fc440d44fdbf",
-  "correlationId": "2f4e75f41766f23705f0240b012c4ec9, 2f4e75f41766f23705f0240b012c4ec9"
-}
-
-Body: 
-
 {
   "ref": "refs/heads/master",
   "before": "479561d7cff3ba8480a3d4da8d48c7137d12080e",
