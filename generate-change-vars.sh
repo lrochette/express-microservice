@@ -56,7 +56,7 @@ function choose_color() {
 
 function choose_jira_issue() {
     # Sets output var JIRA_ISSUE
-    declare -a ISSUE_LIST=("SA-156" "SA-157" "SA-158" "SA-159")
+    declare -a ISSUE_LIST=("FT-156" "FT-157" "FT-158" "FT-159")
     ISSUE_INDEX=$(($RANDOM % 4))
     export JIRA_ISSUE=${ISSUE_LIST[ISSUE_INDEX]}
     export JIRA_ISSUE_PREFIX=SA
@@ -94,7 +94,7 @@ CHANCES=$2      # skip ratio denominator
 
 # If $SKIP_THIS_TIME doesn't already exist, create it
 if [ -z "$SKIP_THIS_TIME" ]
-  then 
+  then
     if [ -z "$SKIP_TIMES" ]; then echo Missing script arguments; exit 1; fi
     if [ -z "$CHANCES" ]; then echo Missing 2nd script argument; exit 1; fi
     random_skip
